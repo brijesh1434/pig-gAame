@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .hello{
+            border:2px solid black;
+            background-color:brown;
+            display: flex;
+            width:450px;
+            padding: 3px;
+            margin-left: 5px;
+
+        }
+        .left{
+            border: 5px solid green;
+            width:50%;
+            padding: 3px;
+            margin-left: 5px;
+            display: flex;
+            flex-direction: column;
+            
+        }
+        .box-right{
+            border:2px solid white;
+            padding: 3px;
+            margin-left: 5px;
+        }
+        p{
+            border:2px solid yellow
+        }
+        @media (max-width:640px){
+            .hello{
+                flex-direction: column;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="hello">
+        <div class="left">
+            <p> text-1</p>
+            <p>Text 2</p>
+        </div>
+        <div class=" box-right">
+            <img src="https://imgs.search.brave.com/_7jU8FExfU9RUG4Ym7jyNsURAITNjOa1ZnppQAe52BE/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9pbWdz/Mi5kYWIzZ2FtZXMu/Y29tL3JpZ2h0LWJv/eC1nYW1lLnBuZw" alt="">
+        </div>
+    </div>
+</body>
+</html>
